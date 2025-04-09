@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <title>Login - Task Manager SaaS</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-login">
+        <div class="login-container">
+          <h1 class="login-container__title">Acesse sua conta</h1>
+          <form
+            class="login-container__form"
+            action="../model/gerenciador.php"
+            method="POST"
+          >
+            <div class="login-container__form__group">
+              <label class="login-container__form__group__label" for="username"
+                >Nome *</label
+              >
+              <input
+                class="login-container__form__group__input"
+                placeholder="Digite seu usuário"
+                type="text"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+
+            <div class="login-container__form__group">
+              <label class="login-container__form__group__label" for="password"
+                >Senha *</label
+              >
+              <input
+                placeholder="Digite sua senha"
+                class="login-container__form__group__input"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="login-container__form__button">
+              Entrar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      const form = document.querySelector(".login-container__form");
+      form.addEventListener("submit", function (e) {
+        const usernameInput = document.getElementById("username");
+        const username = usernameInput.value;
+        localStorage.setItem("username", username);
+      });
+    </script>
+  </body>
+</html>

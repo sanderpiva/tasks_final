@@ -1,0 +1,20 @@
+1. Alterar o nome de usuário para algo dinâmico.
+    - Criar tabela user para fazer login ?
+
+2. Carregar de forma dinâmica a quantidade de tarefas com estado concluído ou pendente ("true" ou "false" no banco) e fazer a soma para total de tarefas.
+    - if else para saber se é true ou false campo "isDone" (sugestão)
+    - somar total de tarefas cadastradas dar um count na tabela de tarefas
+
+
+
+
+-- COMMITS --
+Utilizar conventional commits para subir no github (pesquisar no GPT): Fazer os commits em inglês para praticar.
+Exemplo de commit: tipo(escopo): descrição
+
+"Feat pois é funcionalidade nova" "escopo do arquivo, ou pasta, ou contexto" "descrição da tarefa realizada"
+"Criado estrutura do index.html" --> traduzir para ingles
+
+feat(index.html): Created index.html structure
+
+Utilizar git add "nome do arquivo", se for usar o git . que seja todos arquivos referentes ao mesmo commit para organização

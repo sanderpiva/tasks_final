@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Apagar</title>
+  </head>
+  <body>
+    <main>
+      <section id="section-delete">
+        <div class="delete-container">
+          <form
+            style="text-align: center"
+            class="delete-container__form"
+            action="../crud/apagar.php"
+            method="post"
+          >
+            <h1 class="delete-container__form__title">Faça seu cadastro</h1>
+
+            <div class="delete-container__form__group">
+              <label for="codigo" class="delete-container__form__group__label"
+                >Código *</label
+              >
+              <input
+                class="delete-container__form__group__input"
+                type="number"
+                name="codigo"
+                id="codigo"
+                placeholder="Digite seu código"
+                required
+              />
+            </div>
+
+            <button type="submit" class="delete-container__form__button">
+              Enviar
+            </button>
+            <a
+              href="gerenciador.php"
+              class="delete-container__form__back-button"
+              >Voltar</a
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
